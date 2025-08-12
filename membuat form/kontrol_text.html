@@ -1,0 +1,108 @@
+<html>
+<head>
+    <title>Form</title>
+</head>
+<body>
+    <style>
+        body {
+            color: yellow;
+        }
+        h2 {
+            color: red;
+            padding: 10px;
+            text-align: center;
+            justify-self: unset;
+        }
+        input {
+            color: blue;
+            background-color: #f0f0f0;
+            border: 1px solid #ccc;
+            padding: 5px;
+            border-radius: 3px;
+        }
+        p.ex {
+            color: rgb(0,0 ,255 );
+        }
+        p.g {
+            color: green;
+        }
+        img {
+            width: 100px;
+            height: 100px;
+        }
+        video {
+            width: 200px;
+            height: 200px;
+
+        }
+    
+    </style>
+    <h2>
+        <marquee direction="right" behavior="alternate" width="50%">
+            Demo Membuat Kontrol Teks
+        </marquee>
+
+    </h2>
+    <form>
+        <fieldset>
+      <legend>Formulir Kontrol Text</legend>
+      <p class="ex">Nama:</p>
+      <input type="text" name="txtNama" style="width: 30%;" />
+      <br /><br />
+      <p class="ex">alamat:</p>
+      <textarea type="text" name="txtAlamat" rows="5" cols="30" style="width: 30%;"></textarea>
+      <br /><br />
+      <p class="g">No Telepon:</p>
+      <input type="text" name="txtTelepon" style="width: 20%;" />
+      <br /><br />
+      <p>Password:</p>
+      <input type="password" name="txtPassword" style="width: 20%;" />
+      <br /><br />
+      <p>File:</p>
+      <input type="file" name="txtFile" />
+      <br /><br />
+      <p>Hidden Field:</p>
+      <input type="hidden" name="txtHidden" value="hidden value" />
+      <br /><br />
+      <p>Checkbox:</p>
+      <input type="checkbox" name="txtCheckbox" value="option1" /> Option 1
+      <input type="checkbox" name="txtCheckbox" value="option2" /> Option 2
+      <br /><br />
+      <p>Radio Button:</p>
+      <input type="radio" name="txtRadio" value="option1" /> Option 1
+      <input type="radio" name="txtRadio" value="option2" /> Option 2
+      <br /><br />
+      <p>
+        <label for="txtJurusan">Jurusan:</label>
+        <select id="txtJurusan" name="txtJurusan">
+          <option value="PPLG">PPLG</option>
+          <option value="TJKT">TJKT</option>
+          <option value="AKUTANSI">AKUTANSI</option>
+          <option value="MPLB">MPLB</option>
+          <option value="Lainnya">Lainnya</option>
+        </select>
+      </p>
+      <p>Hobi List:</p>
+      <ul>
+        <li><input type="checkbox" name="txtTodo" value="todo1" /> Hobi 1</li>
+        <li><input type="checkbox" name="txtTodo" value="todo2" /> Hobi 2</li>
+        <li><input type="checkbox" name="txtTodo" value="todo3" /> hobi 3</li>
+      </ul>
+      <br /><br />
+      <p>
+        <img src="WhatsApp Image 2025-08-01 at 00.33.52 - Copy.jpeg" />
+        </p>
+        <p>
+        <video controls>
+            <source src="WhatsApp Video 2025-08-12 at 12.31.59.mp4" type="video/mp4">
+        </video>
+        </p>
+        <br /><br />
+        <p>
+        <input type="submit" value="Submit" />
+        <input type="reset" value="Reset" />
+      </p>
+    </fieldset>
+  </form>
+</body>
+</html>
